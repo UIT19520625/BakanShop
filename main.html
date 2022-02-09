@@ -2,69 +2,126 @@
 <html>
     <head>
         <title>Hello World!</title>
-        <link rel="stylesheet" href="main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "main.css">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "fontawesome-free-6.0.0-web/css/all.min.css">
     </head>
     <body>
         <header>
             BAKAN SHOP
         </header>
         <nav>
-            <div class = "nav-element" id = "first-element">
-                <button class = "dropbtn" onclick="window.location.href = '#'" >Category</button>
-                <div class = "dropdown-content">
-                    <a href = "#">Switches</a>
-                    <a href = "#">Keycaps</a>
-                    <a href = "#">Tools</a>
-                    <a href = "#">Stabilizer</a>
-                    <a href = "#">Others</a>
+            <div class = "nav-element-wrapped">
+                <div class = "nav-element" id = "first-element" >
+                    <button class = "clickbtn" onclick = "window.location.href = '#'"><i class="fa-solid fa-house-chimney"></i></button>
                 </div>
-            </div>
-            <div class = "nav-element">
-                <button class = "dropbtn" onclick="window.location.href = '#'" >Service</button>
-                <div class = "dropdown-content">
-                    <a href = "#">Switches</a>
-                    <a href = "#">Keycaps</a>
-                    <a href = "#">Tools</a>
-                    <a href = "#">Stabilizer</a>
-                    <a href = "#">Others</a>
+                <div class = "nav-element">
+                    <button class = "dropbtn" onclick = "window.location.href = '#'" >Category</button>
+                    <div class = "dropdown-content">
+                        <a href = "#">Switches</a>
+                        <a href = "#">Keycaps</a>
+                        <a href = "#">Tools</a>
+                        <a href = "#">Stabilizer</a>
+                        <a href = "#">Mouse Pad</a>
+                        <a href = "#">PCB</a>
+                        <a href = "#">Case</a>
+                        <a href = "#">Cable</a>
+                    </div>
                 </div>
-            </div>
-            <div class = "nav-element">
-                <button class = "clickbtn" onclick="window.location.href = 'https://www.facebook.com/'">Blog</button>
+                <div class = "nav-element">
+                    <button class = "dropbtn" onclick = "window.location.href = '#'" >Service</button>
+                    <div class = "dropdown-content">
+                        <a href = "#">Lube Switches</a>
+                        <a href = "#">Foam Cut</a> 
+                        <a href = "#">Soldering/ Desoldering</a>
+                        <a href = "#">Others</a>
+                    </div>
+                </div>
+                <div class = "nav-element">
+                    <button class = "clickbtn" onclick = "window.location.href = '#'">Blog</button>
+                </div>
+                <div class = "nav-element">
+                    <button class = "clickbtn" onclick = "window.location.href = '#'">Contact</button>
+                </div>
+                <div class = "nav-element">
+                    <button class = "clickbtn" onclick = "window.location.href = '#'">Sale Off</button>
+                </div>
+                <div class = "nav-element findbtn">
+                    <button class = "clickbtn" onclick = "window.location.href = '#'"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
             </div>
         </nav>
-        <h1>Hello world!</h1>
-        <p>This is the first file in my new Git Repo.</p>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
-        <h1>Hello world!</h1>
+        <section>
+            <div class = "slideshow-container">
+                <h1 class = "title" >New Product</h1>
+                <div class = "mySlides1">
+                  <img src = "images/adsadsasd/2.png" style = "width:100%">
+                </div>
+              
+                <div class = "mySlides1">
+                  <img src = "images/adsadsasd/3.png" style="width:100%">
+                </div>
+                <a class = "prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class = "next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+            <div class = "slideshow-container">
+                <h1 class = "title" >Hot Product</h1>
+                <div class = "mySlides2">
+                  <img src = "images/adsadsasd/2.png" style = "width:100%">
+                </div>
+              
+                <div class = "mySlides2">
+                  <img src = "images/adsadsasd/3.png" style="width:100%">
+                </div>
+                <a class = "prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class = "next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+        </section>
+
+        <script>
+            var slideIndex = [1,1];
+            var slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              var i;
+              var x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+        </script>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+        <h1>Test sticky navbar</h1>
+
     </body>
 </html>
