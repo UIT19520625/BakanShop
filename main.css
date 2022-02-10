@@ -1,0 +1,263 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+    font-family: Acme, sans-serif;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px;
+    width: 100%;
+    font-family: 'Permanent Marker', serif;
+    line-height: 0%;
+}
+
+/* ### NAV BAR ###*/
+
+nav {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 102%;
+    z-index: 1;
+    margin-left: -1%;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+}
+
+nav .dropbtn {
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: Acme, sans-serif;
+}
+
+nav .nav-element-wrapped {
+    position: relative;
+    width: 70%;
+    left: 15%;
+}
+
+nav .nav-element {
+    display: inline-block;
+    margin-left: -2px;
+}
+  
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+    z-index: 1;
+}
+  
+nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav .clickbtn {
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: Acme, sans-serif;
+}
+
+nav .nav-element:hover .clickbtn {
+    background-color: white;
+    color: black;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #ddd;
+    border: 0px;
+    border-radius: 10px;
+}
+
+nav .dropdown-content a:first-child:hover {
+    background-color: #ddd;
+    border: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+  
+nav .nav-element:hover .dropdown-content {
+    display: block;
+    border: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+  
+nav .nav-element:hover .dropbtn {
+    background-color: white;
+    color: black;
+}
+
+nav .findbtn {
+    margin-left: 0;
+    float: right;
+    left: 0;
+}
+/* ### NAV BAR ###*/
+
+
+
+
+/* ### HOME SLIDE PICTURE ### */
+section {
+    position: relative;
+    margin-top: 0.75%;
+    left: 15%;
+    width: 70%;
+    height: auto;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box
+}
+
+section .mySlides1, .mySlides2, .mySlides3 {
+    display: none;
+}
+
+section h1 {
+    font-size: 24px;
+    line-height: 20%;
+    text-align: center;
+}
+
+section img {
+    vertical-align: middle;
+}
+
+
+/* Slider hover animation */
+
+/* "See more" Button */
+section .text {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+}
+
+section .text:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+}
+
+/* Opacity when hover */
+section .middle {
+    transition: .25s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+section .mySlides1:hover img{
+    opacity: 0.4;
+    transition: .25s ease;
+}
+
+section .mySlides1:hover .middle{
+    opacity: 1;
+}
+
+section .mySlides2:hover img{
+    opacity: 0.4;
+    transition: .5s ease-in-out;
+}
+
+section .mySlides2:hover .middle{
+    opacity: 1;
+}
+
+section .mySlides3:hover img{
+    opacity: 0.4;
+    transition: .5s ease-in-out;
+}
+
+section .mySlides3:hover .middle{
+    opacity: 1;
+}
+/* ### */
+
+
+/* Slideshow container */
+section .slideshow-container {
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.7);
+}
+
+section .hot-product {
+    float: right;
+    max-width: 49.5%;
+}
+
+section .new-product {
+    float: left;
+    max-width: 49.5%;
+}
+
+section .sale-off {
+    max-width: 100%;
+    margin-top: 1%;
+}
+
+/* ### */
+
+/* Next & previous buttons */
+section .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px 16px 10px 16px;
+    margin-top: -22px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    user-select: none;
+    opacity: 0.6;
+}
+
+/* Position the "next button" to the right */
+section .next {
+    right: 0;
+}
+
+/* On hover, add a grey background color */
+section .prev:hover, .next:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+/* ### HOME SLIDE PICTURE ### */
+
