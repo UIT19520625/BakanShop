@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello World!</title>
+        <title>Bakan Shop</title>
         <link rel = "stylesheet" href = "main.css">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1">
         <link rel = "stylesheet" href = "fontawesome-free-6.0.0-web/css/all.min.css">
+        <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker|Acme">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
     </head>
     <body>
+
         <header>
-            BAKAN SHOP
+            <h1>BAKAN SHOP</h1><br>
+            <p>Best choice for your keyboard</p>
         </header>
+
         <nav>
             <div class = "nav-element-wrapped">
-                <div class = "nav-element" id = "first-element" >
-                    <button class = "clickbtn" onclick = "window.location.href = '#'"><i class="fa-solid fa-house-chimney"></i></button>
+
+                <div class = "nav-element" style = "margin: 0;">
+                    <a href = "#"><button class = "clickbtn"><i class = "fa-solid fa-house-chimney"></i></button></a>
                 </div>
+
                 <div class = "nav-element">
-                    <button class = "dropbtn" onclick = "window.location.href = '#'" >Category</button>
+                    <a href = "#"><button class = "dropbtn">Products</button></a>
                     <div class = "dropdown-content">
                         <a href = "#">Switches</a>
                         <a href = "#">Keycaps</a>
@@ -28,6 +34,7 @@
                         <a href = "#">Cable</a>
                     </div>
                 </div>
+
                 <div class = "nav-element">
                     <button class = "dropbtn" onclick = "window.location.href = '#'" >Service</button>
                     <div class = "dropdown-content">
@@ -37,53 +44,92 @@
                         <a href = "#">Others</a>
                     </div>
                 </div>
+
                 <div class = "nav-element">
                     <button class = "clickbtn" onclick = "window.location.href = '#'">Blog</button>
                 </div>
+
                 <div class = "nav-element">
                     <button class = "clickbtn" onclick = "window.location.href = '#'">Contact</button>
                 </div>
-                <div class = "nav-element">
-                    <button class = "clickbtn" onclick = "window.location.href = '#'">Sale Off</button>
-                </div>
+
                 <div class = "nav-element findbtn">
                     <button class = "clickbtn" onclick = "window.location.href = '#'"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
         </nav>
+
         <section>
-            <div class = "slideshow-container">
-                <h1 class = "title" >New Product</h1>
+
+            <!-- New Product Slide Picture -->
+            <article class = "slideshow-container new-product">
+                <h1 class = "title">New Product</h1>
                 <div class = "mySlides1">
-                  <img src = "images/adsadsasd/2.png" style = "width:100%">
+                    <img src = "images/adsadsasd/2.png" style = "width:100%">
+                    <div class="middle">
+                        <a href = "#" class="text">See more</a>
+                    </div>
                 </div>
-              
+                
                 <div class = "mySlides1">
-                  <img src = "images/adsadsasd/3.png" style="width:100%">
+                    <img src = "images/adsadsasd/3.png" style = "width:100%">
+                    <div class="middle">
+                        <a href = "#" class="text">See more</a>
+                    </div>
                 </div>
                 <a class = "prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                 <a class = "next" onclick="plusSlides(1, 0)">&#10095;</a>
-            </div>
-            <div class = "slideshow-container">
-                <h1 class = "title" >Hot Product</h1>
+            </article>
+
+            <!-- Hot Product Slide Picture -->
+            <article class = "slideshow-container hot-product">
+                <h1 class = "title">Hot Product</h1>
                 <div class = "mySlides2">
-                  <img src = "images/adsadsasd/2.png" style = "width:100%">
+                    <img src = "images/adsadsasd/3.png" style = "width:100%">
+                    <div class="middle">
+                        <a href = "#" class="text">See more</a>
+                    </div>
                 </div>
-              
+                
                 <div class = "mySlides2">
-                  <img src = "images/adsadsasd/3.png" style="width:100%">
+                    <img src = "images/adsadsasd/2.png" style = "width:100%">
+                    <div class="middle">
+                        <a href = "#" class="text">See more</a>
+                    </div>
                 </div>
                 <a class = "prev" onclick="plusSlides(-1, 1)">&#10094;</a>
                 <a class = "next" onclick="plusSlides(1, 1)">&#10095;</a>
-            </div>
+            </article>
+
+            <!-- Sale off Slide Picture -->
+            <article class = "slideshow-container sale-off">
+                <h1 class = "title">Sale off</h1>
+                <div class = "mySlides3">
+                    <img src = "images/adsadsasd/2.png" style = "width:100%">
+                    <div class="middle">
+                        <a href = "#" class="text">See more</a>
+                    </div>
+                </div>
+                
+                <div class = "mySlides3">
+                    <img src = "images/adsadsasd/3.png" style = "width:100%">
+                    <div class="middle">
+                        <a href = "#" class="text">See more</a>
+                    </div>
+                </div>
+                <a class = "prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                <a class = "next" onclick="plusSlides(1, 2)">&#10095;</a>
+            </article>
         </section>
 
+            <!-- Slider -->
         <script>
-            var slideIndex = [1,1];
-            var slideId = ["mySlides1", "mySlides2"]
+            var slideIndex = [1,1,1];
+            var slideId = ["mySlides1", "mySlides2", "mySlides3"];
             showSlides(1, 0);
             showSlides(1, 1);
-            
+            showSlides(1, 2);
+
             function plusSlides(n, no) {
               showSlides(slideIndex[no] += n, no);
             }
@@ -99,29 +145,8 @@
               x[slideIndex[no]-1].style.display = "block";  
             }
         </script>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
-        <h1>Test sticky navbar</h1>
+        <footer>
 
+        </footer>
     </body>
 </html>
