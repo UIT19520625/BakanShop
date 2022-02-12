@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
     overflow-x: hidden;
@@ -14,7 +18,7 @@ header {
     line-height: 0%;
 }
 
-/* ### NAV BAR ###*/
+/* ############# NAV BAR #############*/
 
 nav {
     background-color: black;
@@ -105,10 +109,11 @@ nav .findbtn {
     float: right;
     left: 0;
 }
-/* ### NAV BAR ###*/
 
 
 
+
+/* ########## MAIN CONTENT ########## */
 
 /* ### HOME SLIDE PICTURE ### */
 section {
@@ -127,6 +132,8 @@ section {
 
 section .mySlides1, .mySlides2, .mySlides3 {
     display: none;
+    animation: none; 
+    position: relative;
 }
 
 section h1 {
@@ -144,6 +151,7 @@ section img {
 
 /* "See more" Button */
 section .text {
+    position: relative;
     background-color: white;
     color: black;
     font-size: 16px;
@@ -172,7 +180,7 @@ section .middle {
 
 section .mySlides1:hover img{
     opacity: 0.4;
-    transition: .25s ease;
+    transition: .3s linear;
 }
 
 section .mySlides1:hover .middle{
@@ -181,7 +189,7 @@ section .mySlides1:hover .middle{
 
 section .mySlides2:hover img{
     opacity: 0.4;
-    transition: .5s ease-in-out;
+    transition: .3s linear;
 }
 
 section .mySlides2:hover .middle{
@@ -190,13 +198,12 @@ section .mySlides2:hover .middle{
 
 section .mySlides3:hover img{
     opacity: 0.4;
-    transition: .5s ease-in-out;
+    transition: .3s linear;
 }
 
 section .mySlides3:hover .middle{
     opacity: 1;
 }
-/* ### */
 
 
 /* Slideshow container */
@@ -224,8 +231,6 @@ section .sale-off {
     margin-top: 1%;
 }
 
-/* ### */
-
 /* Next & previous buttons */
 section .prev, .next {
     cursor: pointer;
@@ -233,8 +238,9 @@ section .prev, .next {
     top: 50%;
     width: auto;
     padding: 10px 16px 10px 16px;
-    margin-top: -22px;
+    margin: -22px 5px 0px 5px;
     color: whitesmoke;
+    opacity: 0.1;
     font-weight: bold;
     font-size: 24px;
     transition: 0.6s ease;
@@ -255,5 +261,85 @@ section .prev:hover, .next:hover {
     opacity: 0.8;
 }
 
+@keyframes slide {
+    0%    {opacity:0;  }
+    10%   {opacity:0.1;}
+    20%   {opacity:0.2;}
+    30%   {opacity:0.3;}
+    40%   {opacity:0.4;}
+    50%   {opacity:0.5;}
+    60%   {opacity:0.6;}
+    70%   {opacity:0.7;}
+    80%   {opacity:0.8;}
+    90%   {opacity:0.9;}
+    100%  {opacity:1.0;}
+}
+
+
 /* ### HOME SLIDE PICTURE ### */
+
+
+/* ########## FOOTER ########## */
+
+footer {
+    position: relative;
+    top: 10px;
+    background-color: black;
+    color: white;
+    padding: 1% 0 1% 0;
+    width: 102%;
+    margin-left: -1%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer h2 {
+    border-bottom: 1px solid white;
+}
+
+.footer-wrapped {
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    left: 15%;
+}
+
+.footer-intro {
+    width: 34%;
+    float: left;
+    text-align: justify;
+    font-size: 16px;
+    margin-right: 1%;
+}
+
+.footer-info {
+    width: 34%;
+    float: left;
+    padding: 0 1% 0 1%;
+    text-align: justify;
+    font-size: 16px;
+    margin-right: 1%;
+}
+
+.footer-policy {
+    width: 14%;
+    float: left;
+    margin-right: 1%;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.footer-support {
+    width: 14%;
+    float: right;
+    text-align: justify;
+    font-size: 16px;
+}
 

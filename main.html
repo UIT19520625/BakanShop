@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <title>Bakan Shop</title>
         <link rel = "stylesheet" href = "main.css">
         <link rel = "stylesheet" href = "fontawesome-free-6.0.0-web/css/all.min.css">
         <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker|Acme">
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <meta charset="utf-8">
     </head>
     <body>
 
@@ -142,11 +143,43 @@
               for (i = 0; i < x.length; i++) {
                  x[i].style.display = "none";  
               }
+              x[slideIndex[no]-1].style.animation = "slide 0.3s linear";  
               x[slideIndex[no]-1].style.display = "block";  
             }
         </script>
         <footer>
+            <div class = "footer-wrapped">
+                <div class = "footer-intro">
+                    <h2>About us</h2>
+                    <p>Bakan Shop là đơn vị Đọc báo dantri - Tin tức mới nhất, Thông tin nhanh chính xác được cập nhật hàng giờ. báo nói đọc tin tức online Việt Nam Thế giới nóng nhất trong ngày, ...</p>
+                </div>
 
+                <div class = "footer-info">
+                    <h2>Contact Info</h2>
+                    <a href = "https://www.google.com/maps/place/584+Quang+Trung,+Ph%C6%B0%E1%BB%9Dng+11,+G%C3%B2+V%E1%BA%A5p,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.8358008,106.6598481,17z/data=!3m1!4b1!4m5!3m4!1s0x317529a79bd9876b:0x249534a1a5f31112!8m2!3d10.8357955!4d106.6620368?hl=vi-VN" target = "_blank">
+                        <address>
+                            <i class="fa-solid fa-map-location-dot" style = "padding: 5px"></i>
+                            584 Quang Trung Street, Ward 11, Go Vap District, Ho Chi Minh City, Vietnam
+                        </address>
+                    </a>
+                    <a href = "tel:0931464375"><i class="fa-solid fa-phone" style = "padding: 5px" ></i>0931.46.43.75</a><br>
+                    <a href = "mailto:khuynhbao5@gmail.com"><i class="fa-solid fa-envelope" style = "padding: 5px" target = "_blank"></i>khuynhbao5@gmail.com</a>
+                </div>
+
+                <div class = "footer-policy">
+                    <h2>Policy</h2>
+                    <a href = "#">Privacy Policy</a><br>
+                    <a href = "#">Warranty Policy</a><br>
+                    <a href = "#">Installment Policy</a>
+                </div>
+
+                <div class = "footer-support">
+                    <h2>Support</h2>
+                    <a href = "#">Ordering guide</a><br>
+                    <a href = "#">Payment methods</a>
+                </div>
+
+            </div>
         </footer>
     </body>
 </html>
