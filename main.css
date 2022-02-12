@@ -18,15 +18,7 @@ header {
     line-height: 0%;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* ### NAV BAR ###*/
-=======
 /* ############# NAV BAR #############*/
->>>>>>> master
-=======
-/* ############# NAV BAR #############*/
->>>>>>> master
 
 nav {
     background-color: black;
@@ -118,7 +110,8 @@ nav .findbtn {
     left: 0;
 }
 
-/* ### NAV BAR ###*/
+
+
 
 /* ########## MAIN CONTENT ########## */
 
@@ -196,15 +189,7 @@ section .mySlides1:hover .middle{
 
 section .mySlides2:hover img{
     opacity: 0.4;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    transition: .5s ease-in-out;
-=======
     transition: .3s linear;
->>>>>>> master
-=======
-    transition: .3s linear;
->>>>>>> master
 }
 
 section .mySlides2:hover .middle{
@@ -213,27 +198,12 @@ section .mySlides2:hover .middle{
 
 section .mySlides3:hover img{
     opacity: 0.4;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    transition: .5s ease-in-out;
-=======
     transition: .3s linear;
->>>>>>> master
-=======
-    transition: .3s linear;
->>>>>>> master
 }
 
 section .mySlides3:hover .middle{
     opacity: 1;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* ### */
-=======
->>>>>>> master
-=======
->>>>>>> master
 
 
 /* Slideshow container */
@@ -261,14 +231,6 @@ section .sale-off {
     margin-top: 1%;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* ### */
-
-=======
->>>>>>> master
-=======
->>>>>>> master
 /* Next & previous buttons */
 section .prev, .next {
     cursor: pointer;
@@ -276,20 +238,9 @@ section .prev, .next {
     top: 50%;
     width: auto;
     padding: 10px 16px 10px 16px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    margin-top: -22px;
-    color: whitesmoke;
-=======
     margin: -22px 5px 0px 5px;
     color: whitesmoke;
     opacity: 0.1;
->>>>>>> master
-=======
-    margin: -22px 5px 0px 5px;
-    color: whitesmoke;
-    opacity: 0.1;
->>>>>>> master
     font-weight: bold;
     font-size: 24px;
     transition: 0.6s ease;
@@ -310,13 +261,6 @@ section .prev:hover, .next:hover {
     opacity: 0.8;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* ### HOME SLIDE PICTURE ### */
-
-=======
-=======
->>>>>>> master
 @keyframes slide {
     0%    {opacity:0;  }
     10%   {opacity:0.1;}
@@ -398,8 +342,3 @@ footer h2 {
     text-align: justify;
     font-size: 16px;
 }
-
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
